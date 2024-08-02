@@ -1,0 +1,25 @@
+---
+# Default for Datadog Agent Tags
+dd_agent_tags:
+  app: 'kafka'
+
+# Default for Kafka Port
+kafka_port: '9092'
+
+# Default for Kafka Consumer Monitoring
+kafka_consumer_enabled: 'false'
+
+# Default for Kafka Consumer Monitoring Authentication
+kafka_consumer_auth_enabled: 'false'
+
+# Default for Kafka Consumer Monitoring Authentication SASL Mechanism
+kafka_consumer_auth_sasl_mechanism: 'SCRAM-SHA-512'
+
+# Default for Kafka Consumer Monitoring Authentication SASL Username
+kafka_consumer_auth_sasl_username: ''
+
+# Default for Kafka Consumer Monitoring Authentication SASL Username
+kafka_consumer_auth_sasl_password: ''
+
+# Default for Kafka Consumer Monitoring Authentication Security Protocol
+kafka_consumer_auth_security_protocol: 'SASL_PLAINTEXT'

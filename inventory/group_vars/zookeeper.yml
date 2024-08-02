@@ -1,0 +1,7 @@
+---
+# Default for Datadog Agent Tags
+dd_agent_tags:
+  app: 'zookeeper'
+
+# Default for Zookeeper Port
+zookeeper_port: '2181'

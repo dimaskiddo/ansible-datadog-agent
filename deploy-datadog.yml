@@ -1,0 +1,28 @@
+- hosts: agent
+  any_errors_fatal: true
+  roles:
+    - role: agent
+
+- hosts: kafka
+  any_errors_fatal: true
+  roles:
+    - role: agent
+    - role: kafka
+
+- hosts: zookeeper
+  any_errors_fatal: true
+  roles:
+    - role: agent
+    - role: zookeeper
+
+- hosts: elasticsearch
+  any_errors_fatal: true
+  roles:
+    - role: agent
+    - role: elasticsearch
+
+- hosts: nginx
+  any_errors_fatal: true
+  roles:
+    - role: agent
+    - role: nginx

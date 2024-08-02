@@ -1,0 +1,16 @@
+---
+- name: Create Datadog Agent Installer File from Template
+  template:
+    src: datadog.sh.j2
+    dest: /tmp/datadog.sh
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Running Datadog Agent Installer
+  command: /tmp/datadog.sh
+
+- name: Remove Datadog Agent Installer File
+  file:
+    path: /tmp/datadog.sh
+    state: absent

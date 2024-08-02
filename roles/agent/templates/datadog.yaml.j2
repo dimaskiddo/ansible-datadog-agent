@@ -1,0 +1,18 @@
+api_key: {{ dd_agent_apikey }}
+site: {{ dd_agent_site }}
+hostname: {{ node_name }}
+tags:
+  - "provider:{{ dd_agent_tags.provider }}"
+  - "location:{{ dd_agent_tags.location }}"
+  - "account:{{ dd_agent_tags.account }}"
+  - "tribe:{{ dd_agent_tags.tribe }}"
+  - "squad:{{ dd_agent_tags.squad }}"
+  - "ecosystem:{{ dd_agent_tags.ecosystem }}"
+  - "cluster:{{ dd_agent_tags.cluster }}"
+  - "env:{{ dd_agent_tags.env }}"
+  - "app:{{ dd_agent_tags.app }}"
+logs_enabled: true
+logs_config:
+  container_collect_all: false
+process_config:
+  enabled: true

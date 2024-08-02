@@ -1,0 +1,12 @@
+---
+# Default for ElasticSearch Authentication
+elasticsearch_auth_enabled: 'false'
+
+# Default for ElasticSearch Authentication Type
+elasticsearch_auth_type: 'basic'
+
+# Default for ElasticSearch Authentication Username
+elasticsearch_auth_username: ''
+
+# Default for ElasticSearch Authentication Password
+elasticsearch_auth_password: ''

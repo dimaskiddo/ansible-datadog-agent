@@ -1,0 +1,40 @@
+---
+- name: Create Datadog Agent Config File
+  template:
+    src: datadog.yaml.j2
+    dest: /etc/datadog-agent/datadog.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644
+
+- name: Create Datadog Agent System Core Config File
+  template:
+    src: system_core.yaml.j2
+    dest: /etc/datadog-agent/conf.d/system_core.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644
+
+- name: Create Datadog Agent System Swap Config File
+  template:
+    src: system_swap.yaml.j2
+    dest: /etc/datadog-agent/conf.d/system_swap.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644
+
+- name: Create Datadog Agent Disk Config File
+  template:
+    src: disk.yaml.j2
+    dest: /etc/datadog-agent/conf.d/disk.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644
+
+- name: Create Datadog Agent NTP Config File
+  template:
+    src: ntp.yaml.j2
+    dest: /etc/datadog-agent/conf.d/ntp.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644

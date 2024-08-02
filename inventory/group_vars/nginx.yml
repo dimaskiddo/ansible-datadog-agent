@@ -1,0 +1,10 @@
+---
+# Default for Datadog Agent Tags
+dd_agent_tags:
+  app: 'nginx'
+
+# Default for Nginx Status Port
+nginx_status_port: '8080'
+
+# Default for Nginx Status Path
+nginx_status_path: '/stats'

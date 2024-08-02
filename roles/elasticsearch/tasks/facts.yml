@@ -1,0 +1,14 @@
+---
+- name: Fail if ElasticSearch Authentication Username Variable is not set
+  fail:
+    msg: "ElasticSearch Authentication Username Variable is not set"
+  when:
+    - elasticsearch_auth_enabled == 'true'
+    - elasticsearch_auth_username is not defined or elasticsearch_auth_username == ''
+
+- name: Fail if ElasticSearch Authentication Password Variable is not set
+  fail:
+    msg: "ElasticSearch Authentication Password Variable is not set"
+  when:
+    - elasticsearch_auth_enabled == 'true'
+    - elasticsearch_auth_password is not defined or elasticsearch_auth_password == ''

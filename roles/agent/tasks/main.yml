@@ -1,0 +1,8 @@
+---
+- include: facts.yml
+
+- include: agent_pkg.yml
+
+- include: agent_config.yml
+
+- include: agent_svc.yml

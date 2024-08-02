@@ -1,0 +1,9 @@
+init_config:
+instances:
+  - url: http://localhost:9200
+{% if elasticsearch_auth_enabled == 'true' %}
+    auth_type: {{ elasticsearch_auth_type }}
+    username: {{ elasticsearch_auth_username }}
+    password: {{ elasticsearch_auth_password }}
+    index_stats: true
+{% endif %}

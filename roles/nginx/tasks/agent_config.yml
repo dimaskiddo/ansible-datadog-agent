@@ -1,0 +1,8 @@
+---
+- name: Create Datadog Agent Nginx Monitoring Config File
+  template:
+    src: nginx.yaml.j2
+    dest: /etc/datadog-agent/conf.d/nginx.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644

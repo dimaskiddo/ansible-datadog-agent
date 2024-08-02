@@ -1,0 +1,11 @@
+---
+- name: Fail if Datadog Agent API Key Variable is not set
+  fail:
+    msg: "Datadog Agent API Key Variable is not set"
+  when:
+    - datadog_agent_apikey is not defined or datadog_agent_apikey == ''
+
+- name: Set Fact for Datadog Agent Host Variable
+  set_fact:
+    node_ip: "{{ node_ip | default(default_value, true) }}"
+    node_name: "{{ node_name | default(default_value, true) }}"

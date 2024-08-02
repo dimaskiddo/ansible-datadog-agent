@@ -1,0 +1,26 @@
+---
+- name: Create Datadog Agent JMX Monitoring Config File
+  template:
+    src: jmx.yaml.j2
+    dest: /etc/datadog-agent/conf.d/jmx.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644
+
+- name: Create Datadog Agent Kafka Monitoring Config File
+  template:
+    src: kafka.yaml.j2
+    dest: /etc/datadog-agent/conf.d/kafka.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644
+
+- name: Create Datadog Agent Kafka Consumer Monitoring Config File
+  template:
+    src: kafka_consumer.yaml.j2
+    dest: /etc/datadog-agent/conf.d/kafka_consumer.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644
+  when:
+    - kafka_consumer_enabled == 'true'

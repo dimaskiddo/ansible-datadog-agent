@@ -1,0 +1,12 @@
+---
+- name: Reload SystemD to Load Datadog Agent Service
+  systemd:
+    name: datadog-agent
+    daemon_reload: yes
+    state: stopped
+
+- name: Enabling and Restarting Datadog Agent Service
+  service:
+    name: datadog-agent
+    enabled: yes
+    state: restarted

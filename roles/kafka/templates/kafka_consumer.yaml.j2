@@ -1,0 +1,10 @@
+init_config:
+instances:
+  - kafka_connect_str: localhost:{{ kafka_port }}
+    monitor_unlisted_consumer_groups: true
+{% if kafka_consumer_auth_enabled == 'true' %}
+    sasl_mechanism: {{ kafka_consumer_auth_sasl_mechanism }}
+    sasl_plain_username: {{ kafka_consumer_auth_sasl_username }}
+    sasl_plain_password: {{ kafka_consumer_auth_sasl_password }}
+    security_protocol: {{ kafka_consumer_auth_security_protocol }}
+{% endif %}

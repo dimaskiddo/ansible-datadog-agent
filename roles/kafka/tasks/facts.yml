@@ -1,0 +1,16 @@
+---
+- name: Fail if Kafka Consumer Authentication SASL Username Variable is not set
+  fail:
+    msg: "Kafka Consumer Authentication SASL Username Variable is not set"
+  when:
+    - kafka_consumer_enabled == 'true'
+    - kafka_consumer_auth_enabled == 'true'
+    - kafka_consumer_auth_sasl_username is not defined or kafka_consumer_auth_sasl_username == ''
+
+- name: Fail if Kafka Consumer Authentication SASL Password Variable is not set
+  fail:
+    msg: "Kafka Consumer Authentication SASL Password Variable is not set"
+  when:
+    - kafka_consumer_enabled == 'true'
+    - kafka_consumer_auth_enabled == 'true'
+    - kafka_consumer_auth_sasl_password is not defined or kafka_consumer_auth_sasl_password == ''
