@@ -23,6 +23,14 @@
     group: dd-agent
     mode: 0644
 
+- name: Create Datadog Agent SystemD Config File
+  template:
+    src: systemd.yaml.j2
+    dest: /etc/datadog-agent/conf.d/systemd.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644
+
 - name: Create Datadog Agent Disk Config File
   template:
     src: disk.yaml.j2

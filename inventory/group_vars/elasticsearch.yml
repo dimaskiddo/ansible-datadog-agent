@@ -3,6 +3,9 @@
 dd_agent_tags:
   app: 'elasticsearch'
 
+# Default for SystemD Service Name
+systemd_service_name: 'elasticsearch.service'
+
 # Default for ElasticSearch Authentication
 elasticsearch_auth_enabled: 'false'
 

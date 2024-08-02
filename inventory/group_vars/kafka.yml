@@ -3,6 +3,9 @@
 dd_agent_tags:
   app: 'kafka'
 
+# Default for SystemD Service Name
+systemd_service_name: 'kafka.service'
+
 # Default for Kafka Port
 kafka_port: '9092'
 

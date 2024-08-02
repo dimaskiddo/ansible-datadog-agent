@@ -1,0 +1,6 @@
+---
+- name: Fail if SystemD Service Name Variable is not set
+  fail:
+    msg: "SystemD Service Name Variable is not set"
+  when:
+    - systemd_service_name is not defined or systemd_service_name == ''

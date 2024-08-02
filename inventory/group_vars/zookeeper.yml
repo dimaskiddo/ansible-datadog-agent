@@ -3,5 +3,8 @@
 dd_agent_tags:
   app: 'zookeeper'
 
+# Default for SystemD Service Name
+systemd_service_name: 'zookeeper.service'
+
 # Default for Zookeeper Port
 zookeeper_port: '2181'
