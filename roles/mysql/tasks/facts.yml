@@ -1,0 +1,12 @@
+---
+- name: Fail if MySQL / MariaDB Username Variable is not set
+  fail:
+    msg: "MySQL / MariaDB Username Variable is not set"
+  when:
+    - mysql_username is not defined or mysql_username == ''
+
+- name: Fail if MySQL / MariaDB Password Variable is not set
+  fail:
+    msg: "MySQL / MariaDB Password Variable is not set"
+  when:
+    - mysql_password is not defined or mysql_password == ''

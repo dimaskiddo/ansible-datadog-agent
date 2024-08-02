@@ -15,6 +15,13 @@
     - role: agent
     - role: http-check
 
+- hosts: mysql
+  any_errors_fatal: true
+  roles:
+    - role: agent
+    - role: mysql
+    - role: systemd
+
 - hosts: kafka
   any_errors_fatal: true
   roles:

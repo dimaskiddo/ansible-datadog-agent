@@ -1,0 +1,16 @@
+---
+# Default for Datadog Agent Tags
+dd_agent_tags:
+  app: 'mysql'
+
+# Default for SystemD Service Name
+systemd_service_name: 'mysqld.service'
+
+# Default for MySQL / MariaDB Port
+mysql_port: '3306'
+
+# Default for MySQL / MariaDB Username
+mysql_username: ''
+
+# Default for MySQL / MariaDB Password
+mysql_password: ''

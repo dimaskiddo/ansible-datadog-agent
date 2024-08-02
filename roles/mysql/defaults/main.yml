@@ -1,0 +1,9 @@
+---
+# Default for MySQL / MariaDB Port
+mysql_port: '3306'
+
+# Default for MySQL / MariaDB Username
+mysql_username: ''
+
+# Default for MySQL / MariaDB Password
+mysql_password: ''
