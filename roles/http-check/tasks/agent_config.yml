@@ -1,0 +1,8 @@
+---
+- name: Create Datadog Agent HTTP Check Monitoring Config File
+  template:
+    src: http_check.yaml.j2
+    dest: /etc/datadog-agent/conf.d/http_check.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644

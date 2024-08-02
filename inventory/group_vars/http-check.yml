@@ -1,0 +1,6 @@
+---
+# Default for HTTP Check Name
+http_check_name: ''
+
+# Default for HTTP Check URL
+http_check_url: ''

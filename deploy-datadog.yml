@@ -9,6 +9,12 @@
     - role: agent
     - role: tcp-check
 
+- hosts: http-check
+  any_errors_fatal: true
+  roles:
+    - role: agent
+    - role: http-check
+
 - hosts: kafka
   any_errors_fatal: true
   roles:
