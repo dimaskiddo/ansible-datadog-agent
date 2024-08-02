@@ -8,21 +8,25 @@
   roles:
     - role: agent
     - role: kafka
+    - role: systemd
 
 - hosts: zookeeper
   any_errors_fatal: true
   roles:
     - role: agent
     - role: zookeeper
+    - role: systemd
 
 - hosts: elasticsearch
   any_errors_fatal: true
   roles:
     - role: agent
     - role: elasticsearch
+    - role: systemd
 
 - hosts: nginx
   any_errors_fatal: true
   roles:
     - role: agent
     - role: nginx
+    - role: systemd
