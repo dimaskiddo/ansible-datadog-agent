@@ -1,0 +1,12 @@
+---
+- name: Fail if PostgreSQL Username Variable is not set
+  fail:
+    msg: "PostgreSQL Username Variable is not set"
+  when:
+    - postgresql_username is not defined or postgresql_username == ''
+
+- name: Fail if PostgreSQL Password Variable is not set
+  fail:
+    msg: "PostgreSQL Password Variable is not set"
+  when:
+    - postgresql_password is not defined or postgresql_password == ''

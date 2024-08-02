@@ -1,0 +1,19 @@
+---
+# Default for Datadog Agent Tags
+dd_agent_tags:
+  app: 'postgresql'
+
+# Default for SystemD Service Name
+systemd_service_name: 'postgresql.service'
+
+# Default for PostgreSQL Port
+postgresql_port: '5432'
+
+# Default for PostgreSQL Username
+postgresql_username: ''
+
+# Default for PostgreSQL Password
+postgresql_password: ''
+
+# Default for PostgreSQL Database
+postgresql_database: 'postgres'

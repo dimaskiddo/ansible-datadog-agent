@@ -1,0 +1,12 @@
+---
+# Default for PostgreSQL Port
+postgresql_port: '5432'
+
+# Default for PostgreSQL Username
+postgresql_username: ''
+
+# Default for PostgreSQL Password
+postgresql_password: ''
+
+# Default for PostgreSQL Database
+postgresql_database: 'postgres'
