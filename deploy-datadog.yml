@@ -3,6 +3,12 @@
   roles:
     - role: agent
 
+- hosts: tcp-check
+  any_errors_fatal: true
+  roles:
+    - role: agent
+    - role: tcp-check
+
 - hosts: kafka
   any_errors_fatal: true
   roles:

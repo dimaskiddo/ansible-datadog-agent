@@ -1,0 +1,8 @@
+init_config: null
+instances:
+- name: {{ tcp_check_name }}
+  host: {{ tcp_check_host }}
+  port: {{ tcp_check_port }}
+  collect_response_time: true
+  tags:
+   - "target_name:{{ tcp_check_name }}"

@@ -1,0 +1,9 @@
+---
+# Default for TCP Check Name
+tcp_check_name: ''
+
+# Default for TCP Check Host
+tcp_check_host: ''
+
+# Default for TCP Check Port
+tcp_check_port: ''
