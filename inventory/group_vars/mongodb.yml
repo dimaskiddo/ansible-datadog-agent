@@ -1,0 +1,22 @@
+---
+# Default for Datadog Agent Tags
+dd_agent_tags:
+  app: 'mongodb'
+
+# Default for SystemD Service Name
+systemd_service_name: 'mongod.service'
+
+# Default for MongoDB Port
+mongodb_port: '27017'
+
+# Default for MongoDB Username
+mongodb_username: ''
+
+# Default for MongoDB Password
+mongodb_password: ''
+
+# Default for MongoDB Database
+mongodb_database: 'admin'
+
+# Default for MongoDB Authentication Source
+mongodb_auth_source: 'admin'

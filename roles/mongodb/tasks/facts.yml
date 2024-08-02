@@ -1,0 +1,12 @@
+---
+- name: Fail if MongoDB Username Variable is not set
+  fail:
+    msg: "MongoDB Username Variable is not set"
+  when:
+    - mongodb_username is not defined or mongodb_username == ''
+
+- name: Fail if MongoDB Password Variable is not set
+  fail:
+    msg: "MongoDB Password Variable is not set"
+  when:
+    - mongodb_password is not defined or mongodb_password == ''

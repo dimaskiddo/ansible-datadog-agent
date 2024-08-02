@@ -29,6 +29,13 @@
     - role: postgresql
     - role: systemd
 
+- hosts: mongodb
+  any_errors_fatal: true
+  roles:
+    - role: agent
+    - role: mongodb
+    - role: systemd
+
 - hosts: kafka
   any_errors_fatal: true
   roles:

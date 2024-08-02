@@ -1,0 +1,9 @@
+init_config:
+instances:
+  - hosts:
+      - localhost:{{ mongodb_port }}
+    username: {{ mongodb_username }}
+    password: {{ mongodb_password }}
+    database: {{ mongodb_database }}}
+    options:
+      authSource: {{ mongodb_auth_source }}

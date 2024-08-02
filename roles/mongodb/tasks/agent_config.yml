@@ -1,0 +1,8 @@
+---
+- name: Create Datadog Agent MongoDB Monitoring Config File
+  template:
+    src: mongo.yaml.j2
+    dest: /etc/datadog-agent/conf.d/mongo.d/conf.yaml
+    owner: dd-agent
+    group: dd-agent
+    mode: 0644
