@@ -1,4 +1,10 @@
 ---
+# Default for Datadog Agent Version
+dd_agent_version: '7'
+
+# Default for Datadig Agent Site
+dd_agent_site: 'datadoghq.com'
+
 # Default for Datadog Agent Tags
 dd_agent_tags:
   provider: ''
