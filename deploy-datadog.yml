@@ -1,4 +1,4 @@
-- hosts: agent
+- hosts: all
   any_errors_fatal: true
   roles:
     - role: agent
@@ -6,60 +6,51 @@
 - hosts: tcp_check
   any_errors_fatal: true
   roles:
-    - role: agent
     - role: tcp_check
 
 - hosts: http_check
   any_errors_fatal: true
   roles:
-    - role: agent
     - role: http_check
 
 - hosts: mysql
   any_errors_fatal: true
   roles:
-    - role: agent
     - role: mysql
     - role: systemd
 
 - hosts: postgresql
   any_errors_fatal: true
   roles:
-    - role: agent
     - role: postgresql
     - role: systemd
 
 - hosts: mongodb
   any_errors_fatal: true
   roles:
-    - role: agent
     - role: mongodb
     - role: systemd
 
 - hosts: kafka
   any_errors_fatal: true
   roles:
-    - role: agent
     - role: kafka
     - role: systemd
 
 - hosts: zookeeper
   any_errors_fatal: true
   roles:
-    - role: agent
     - role: zookeeper
     - role: systemd
 
 - hosts: elasticsearch
   any_errors_fatal: true
   roles:
-    - role: agent
     - role: elasticsearch
     - role: systemd
 
 - hosts: nginx
   any_errors_fatal: true
   roles:
-    - role: agent
     - role: nginx
     - role: systemd

@@ -1,7 +1,8 @@
 ---
 - name: Add Service '{{ systemd_service_name }}' to SystemD Monitoring Config File
-  lineinfile:
+  blockinfile:
     path: /etc/datadog-agent/conf.d/systemd.d/conf.yaml
-    regexp: '^\s*- unit_names:'
-    insertafter: '^- unit_names:$'
-    line: '    - {{ systemd_service_name }}'
+    marker: ""
+    block: |
+      - {{ systemd_service_name }}
+    insertafter: '^(\s*- unit_names:\s*)$'
