@@ -1,6 +1,7 @@
 ---
 # Default for Datadog Agent Tags
 dd_agent_tags:
+  cluster: 'mongodb'
   app: 'mongodb'
 
 # Default for SystemD Service Name

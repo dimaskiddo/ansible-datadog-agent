@@ -1,6 +1,7 @@
 ---
 # Default for Datadog Agent Tags
 dd_agent_tags:
+  cluster: 'nginx'
   app: 'nginx'
 
 # Default for SystemD Service Name

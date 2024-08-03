@@ -15,3 +15,4 @@ dd_agent_tags:
   ecosystem: ''
   cluster: ''
   env: ''
+  app: ''
