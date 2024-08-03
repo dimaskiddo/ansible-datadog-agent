@@ -3,7 +3,7 @@
   fail:
     msg: "Datadog Agent API Key Variable is not set"
   when:
-    - datadog_agent_apikey is not defined or datadog_agent_apikey == ''
+    - dd_agent_apikey is not defined or dd_agent_apikey == ''
 
 - name: Set Fact for Datadog Agent Host Variable
   set_fact:
