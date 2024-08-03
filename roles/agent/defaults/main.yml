@@ -10,3 +10,9 @@ dd_agent_version: '7'
 
 # Default for Datadig Agent Site
 dd_agent_site: 'datadoghq.com'
+
+# Default for Datadog Agent Container Logs
+dd_agent_container_logs_enable: 'false'
+
+# Default for Datadog Agent Container Process
+dd_agent_container_process_enable: 'false'

@@ -13,6 +13,10 @@ tags:
   - "app:{{ dd_agent_tag_app }}"
 logs_enabled: true
 logs_config:
-  container_collect_all: false
+  container_collect_all: {{ dd_agent_container_logs_enable }}
 process_config:
   enabled: true
+  process_collection:
+    enabled: true
+  container_collection:
+    enabled: {{ dd_agent_container_process_enable }}
