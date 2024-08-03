@@ -1,4 +1,7 @@
 ---
+# Default for Kafka Service Name
+kafka_service_name: 'kafka.service'
+
 # Default for Kafka Port
 kafka_port: '9092'
 

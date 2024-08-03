@@ -10,3 +10,7 @@
     msg: "MongoDB Password Variable is not set"
   when:
     - mongodb_password is not defined or mongodb_password == ''
+
+- name: Set Fact for SystemD Service Name
+  set_fact:
+    systemd_service_name: "{{ mongodb_service_name }}"

@@ -3,8 +3,8 @@
 dd_agent_tag_cluster: 'postgresql'
 dd_agent_tag_app: 'postgresql'
 
-# Default for SystemD Service Name
-systemd_service_name: 'postgresql.service'
+# Default for PostgreSQL Service Name
+postgresql_service_name: 'postgresql.service'
 
 # Default for PostgreSQL Port
 postgresql_port: '5432'

@@ -3,8 +3,8 @@
 dd_agent_tag_cluster: 'nginx'
 dd_agent_tag_app: 'nginx'
 
-# Default for SystemD Service Name
-systemd_service_name: 'nginx.service'
+# Default for Nginx Service Name
+nginx_service_name: 'nginx.service'
 
 # Default for Nginx Status Port
 nginx_status_port: '8080'

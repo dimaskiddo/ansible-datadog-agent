@@ -1,4 +1,7 @@
 ---
+# Default for MongoDB Service Name
+mongodb_service_name: 'mongod.service'
+
 # Default for MongoDB Port
 mongodb_port: '27017'
 

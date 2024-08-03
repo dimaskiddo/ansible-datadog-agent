@@ -1,4 +1,7 @@
 ---
+# Default for PostgreSQL Service Name
+postgresql_service_name: 'postgresql.service'
+
 # Default for PostgreSQL Port
 postgresql_port: '5432'
 

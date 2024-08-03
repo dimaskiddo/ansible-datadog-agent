@@ -3,8 +3,8 @@
 dd_agent_tag_cluster: 'zookeeper'
 dd_agent_tag_app: 'zookeeper'
 
-# Default for SystemD Service Name
-systemd_service_name: 'zookeeper.service'
+# Default for Zookeeper Service Name
+zookeeper_service_name: 'zookeeper.service'
 
 # Default for Zookeeper Port
 zookeeper_port: '2181'

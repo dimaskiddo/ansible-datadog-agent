@@ -1,0 +1,4 @@
+---
+- name: Set Fact for SystemD Service Name
+  set_fact:
+    systemd_service_name: "{{ zookeeper_service_name }}"

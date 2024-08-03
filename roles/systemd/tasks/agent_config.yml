@@ -3,5 +3,5 @@
   lineinfile:
     path: /etc/datadog-agent/conf.d/systemd.d/conf.yaml
     regexp: '^\s*- unit_names:'
-    insertafter: '^(\s*- unit_names:)\s*$'
+    insertafter: '^- unit_names:$'
     line: '    - {{ systemd_service_name }}'

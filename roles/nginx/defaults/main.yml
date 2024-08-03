@@ -1,4 +1,7 @@
 ---
+# Default for Nginx Service Name
+nginx_service_name: 'nginx.service'
+
 # Default for Nginx Status Port
 nginx_status_port: '8080'
 

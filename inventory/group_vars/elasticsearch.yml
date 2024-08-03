@@ -3,8 +3,8 @@
 dd_agent_tag_cluster: 'elasticsearch'
 dd_agent_tag_app: 'elasticsearch'
 
-# Default for SystemD Service Name
-systemd_service_name: 'elasticsearch.service'
+# Default for ElasticSearch Service Name
+elasticsearch_service_name: 'elasticsearch.service'
 
 # Default for ElasticSearch Authentication
 elasticsearch_auth_enabled: 'false'

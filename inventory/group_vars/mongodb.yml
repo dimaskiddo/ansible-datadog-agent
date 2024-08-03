@@ -3,8 +3,8 @@
 dd_agent_tag_cluster: 'mongodb'
 dd_agent_tag_app: 'mongodb'
 
-# Default for SystemD Service Name
-systemd_service_name: 'mongod.service'
+# Default for MongoDB Service Name
+mongodb_service_name: 'mongod.service'
 
 # Default for MongoDB Port
 mongodb_port: '27017'

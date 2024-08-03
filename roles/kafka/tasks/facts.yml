@@ -14,3 +14,7 @@
     - kafka_consumer_enabled == 'true'
     - kafka_consumer_auth_enabled == 'true'
     - kafka_consumer_auth_sasl_password is not defined or kafka_consumer_auth_sasl_password == ''
+
+- name: Set Fact for SystemD Service Name
+  set_fact:
+    systemd_service_name: "{{ kafka_service_name }}"

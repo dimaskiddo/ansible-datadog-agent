@@ -1,4 +1,7 @@
 ---
+# Default for ElasticSearch Service Name
+elasticsearch_service_name: 'elasticsearch.service'
+
 # Default for ElasticSearch Authentication
 elasticsearch_auth_enabled: 'false'
 

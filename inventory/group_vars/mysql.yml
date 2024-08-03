@@ -3,8 +3,8 @@
 dd_agent_tag_cluster: 'mysql'
 dd_agent_tag_app: 'mysql'
 
-# Default for SystemD Service Name
-systemd_service_name: 'mysqld.service'
+# Default for MySQL / MariaDB Service Name
+mysql_service_name: 'mysqld.service'
 
 # Default for MySQL / MariaDB Port
 mysql_port: '3306'
