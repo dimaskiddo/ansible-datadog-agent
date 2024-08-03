@@ -3,13 +3,13 @@
   roles:
     - role: agent
 
-- hosts: tcp-check
+- hosts: tcp_check
   any_errors_fatal: true
   roles:
     - role: agent
     - role: tcp-check
 
-- hosts: http-check
+- hosts: http_check
   any_errors_fatal: true
   roles:
     - role: agent
