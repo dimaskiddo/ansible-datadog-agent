@@ -5,6 +5,9 @@ kafka_service_name: 'kafka.service'
 # Default for Kafka Port
 kafka_port: '9092'
 
+# Default for Kafka JMX Port
+kafka_jmx_port: '9581'
+
 # Default for Kafka Consumer Monitoring
 kafka_consumer_enabled: 'false'
 
