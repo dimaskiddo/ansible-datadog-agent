@@ -1,8 +1,7 @@
 ---
 # Default for Datadog Agent Tags
-dd_agent_tags:
-  cluster: 'postgresql'
-  app: 'postgresql'
+dd_agent_tag_cluster: 'postgresql'
+dd_agent_tag_app: 'postgresql'
 
 # Default for SystemD Service Name
 systemd_service_name: 'postgresql.service'

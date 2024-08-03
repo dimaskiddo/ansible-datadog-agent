@@ -1,8 +1,7 @@
 ---
 # Default for Datadog Agent Tags
-dd_agent_tags:
-  cluster: 'elasticsearch'
-  app: 'elasticsearch'
+dd_agent_tag_cluster: 'elasticsearch'
+dd_agent_tag_app: 'elasticsearch'
 
 # Default for SystemD Service Name
 systemd_service_name: 'elasticsearch.service'

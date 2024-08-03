@@ -1,8 +1,7 @@
 ---
 # Default for Datadog Agent Tags
-dd_agent_tags:
-  cluster: 'zookeeper'
-  app: 'zookeeper'
+dd_agent_tag_cluster: 'zookeeper'
+dd_agent_tag_app: 'zookeeper'
 
 # Default for SystemD Service Name
 systemd_service_name: 'zookeeper.service'

@@ -7,13 +7,13 @@
   any_errors_fatal: true
   roles:
     - role: agent
-    - role: tcp-check
+    - role: tcp_check
 
 - hosts: http_check
   any_errors_fatal: true
   roles:
     - role: agent
-    - role: http-check
+    - role: http_check
 
 - hosts: mysql
   any_errors_fatal: true
